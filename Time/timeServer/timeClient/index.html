@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Time</title>
+    <!-- CSS start -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- CSS end -->
+    <!--all the angular libraries -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <script src="bower_components/react/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="bower_components/d3/d3.js"></script>
+
+    <script src="js/timeApp.js"></script>
+    <script src="js/timeService.js"></script>
+    <script src="js/timeFactory.js"></script>
+    <script src="directives/buyTime.js"></script>
+
+</head>
+
+<body ng-app="time">
+
+    <div>
+        <!--this part using reactJS -->
+        <div id="content"></div>
+        <script type="text/babel" src="js/example.js"></script>
+        <!-- views will be injected here -->
+        <!--			test-->
+        <div>
+            <div ui-view></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
